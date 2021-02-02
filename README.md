@@ -11,6 +11,8 @@ yarn add https://github.com/rodrigooler/vercel-cors#main
 # Use
 
 ```js
+const allowCors = require('vercel-cors')
+
 const handler = (req, res) => {
   const d = new Date()
   res.end(d.toString())
